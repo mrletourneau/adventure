@@ -6,9 +6,9 @@ var levels = {
       picture: "start.png",
       options: [
           {
-            title: "Start",
+            title: "START",
             action: function() {
-              return "levelOne";
+                console.log('test');
             }
           }
       ]
@@ -40,6 +40,16 @@ function loadPicture(picture) {
 }
 
 function buildOptions(options) {
-
+    var inputElement = document.getElementById("player-input");
+    options.forEach(function(option) {
+        inputElement.appendChild(buildOption(option));
+    });
 }
 
+function buildOption(option) {
+    var optionElement = document.createElement("button");
+    optionElement.innerHTML = option.title;
+    optionElement.type = "button";
+    optionElement.onclick = option.action;
+    return optionElement;
+}

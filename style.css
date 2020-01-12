@@ -1,0 +1,12 @@
+#picture img {
+    width:500px;
+}
+
+#title {
+    font-size: 20px;
+    font-style: italic;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
