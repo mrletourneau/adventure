@@ -102,6 +102,12 @@ function loadLevel(level) {
     setDescription(level.description);
     loadPicture(level.picture);
     buildOptions(level.options);
+    // Final effect
+    if (level.options.length == 0) {
+      var pictureElement = document.getElementById("picture");
+      var oldPicture = pictureElement.lastElementChild;
+      pictureElement.classList.add('shake');
+    }
 }
 
 function setTitle(title) {
