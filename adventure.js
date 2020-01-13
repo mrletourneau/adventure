@@ -47,7 +47,7 @@ var levels = {
           {
             title: "HAUNTED HAT",
             action: function() {
-                console.log('test');
+               loadLevel(levels["hauntedHat"]);
             }
           }
       ]
@@ -60,13 +60,13 @@ var levels = {
           {
             title: "CREEPY COFFEE",
             action: function() {
-                console.log('test');
+               loadLevel(levels["creepyCoffee"]);
             }
           },
           {
             title: "TOO-SCARY TEA",
             action: function() {
-                console.log('test');
+                loadLevel(levels["tooScaryTea"]);
             }
           }
       ]
@@ -75,6 +75,24 @@ var levels = {
       title: "SPOOKY BOOTS!.",
       description: "YOU HAVE DECIDED TO WEAR THE SPOOKY BOOTS! your feet are now posessed by the spirit of DANCE! PREPARE TO BOOGIE TIL YOU DIEEEEEE",
       picture: "boots.JPG",
+      options: []
+    },
+    hauntedHat: {
+      title: "HAUNTED HAT!.",
+      description: "YOU HAVE DECIDED TO PLACE THE HAUNTED HAT UPON YOUR TWISTED HEAD! you are now haunted by a hat ghost. you now see hats on everyones heads, even when they arent wearing one! these visions slowly drive you to MADNESS",
+      picture: "hat.JPG",
+      options: []
+    },
+    creepyCoffee: {
+      title: "CREEPY COFFEE!!",
+      description: "YOU HAVE INGESTED THE CREEPY COFFEE! now you have boundless energy to creep the uncreepable! good luck!",
+      picture: "coffee.JPG",
+      options: []
+    },
+    tooScaryTea: {
+      title: "TOO-SCARY TEA!",
+      description: "YOU DRANK THE TOO-SCARY TEA! everything is too scary for you, even the gentlest of butterflies. my apologies",
+      picture: "tea.JPG",
       options: []
     }
 }
